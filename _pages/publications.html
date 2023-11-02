@@ -1,0 +1,34 @@
+---
+layout: "splash"
+title: "CaSkade Publications"
+excerpt: "A list of our scientific publications in the research field of capability- and skill-based manufacturing."
+sitemap: true
+permalink: /publications.html
+---
+
+<style>
+	.pubitem > span {
+		font-size: 0.8em;
+	}
+	.pubtitle {
+		font-style: italic;
+	}
+</style>
+
+<h1 class="mt-4">Publications</h1>
+<p>A list of our scientific publications in the research field of capability- and skill-based manufacturing.<p>
+
+{% assign sorted_publications = site.publications | sort: "year" | reverse %}
+{% assign grouped_publications = sorted_publications | group_by: 'year' %}
+{% for year_group in grouped_publications %}
+<h2>{{ year_group.name }}</h2> <!-- This is the year -->
+{% for pub in year_group.items %}
+<div class="pubitem">
+	<span class="pubauthors">{{ pub.authors }}:</span>
+	<span class="pubtitle"> {{ pub.title }}.</span>
+	<span class="pubinfo">{{ pub.publication }}, {{ pub.year}}</span>
+</div>
+{% endfor %}
+
+{% endfor %}
+
