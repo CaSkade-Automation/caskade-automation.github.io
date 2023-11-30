@@ -8,3 +8,45 @@ main:
     url: about
   - title: "Publications"
     url: publications
+
+# information models sidebar
+information-models:
+  - title: "Overview"
+    url: /information-models/overview/
+  - title: "CSS Reference Model"
+    url: /information-models/css/
+  - title: Ontologies
+    children:
+      - title: "CSS Ontology"
+        url: /information-models/css/
+      - title: "CaSk Ontology"
+        url: /information-models/cask/
+      - title: "CaSkMan Ontology"
+        url: /information-models/caskman/
+      - title: "CaSkBot Ontology"
+        url: /information-models/caskbot/
+
+
+software:
+  - title: Overview
+    url: /software
+  - title: Engineering Solutions
+    url: software/engineering
+    children:
+      - title: "Machine Structure"
+        url: /software/engineering/structure/
+      - title: "Capability Engineering"
+        url: /software/engineering/capability-engineering/
+      - title: "Skill Development"
+        url: /software/engineering/skill-development/
+  - title: Manufacturing Control Solutions
+    url: software/manufacturing-control
+    children:
+      - title: "Module Registration"
+        url: /software/module-registration/
+      - title: "Capability Planning"
+        url: /software/capability-planning/
+      - title: "Skill Execution"
+        url: /software/skill-execution/
+      - title: "Process Orchestration"
+        url: /software/process-orchestration/
