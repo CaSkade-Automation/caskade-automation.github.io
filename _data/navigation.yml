@@ -12,19 +12,20 @@ main:
 # information models sidebar
 information-models:
   - title: "Overview"
-    url: /information-models/overview/
+    url: /information-models
   - title: "CSS Reference Model"
-    url: /information-models/css/
+    url: /information-models/css
   - title: Ontologies
+    url: /information-models/ontologies/
     children:
       - title: "CSS Ontology"
-        url: /information-models/css/
+        url: /information-models/ontologies/css
       - title: "CaSk Ontology"
-        url: /information-models/cask/
+        url: /information-models/ontologies/cask
       - title: "CaSkMan Ontology"
-        url: /information-models/caskman/
+        url: /information-models/ontologies/caskman
       - title: "CaSkBot Ontology"
-        url: /information-models/caskbot/
+        url: /information-models/ontologies/caskbot
 
 
 software:
@@ -34,19 +35,19 @@ software:
     url: software/engineering
     children:
       - title: "Machine Structure"
-        url: /software/engineering/structure/
+        url: /software/engineering/machine-structure
       - title: "Capability Engineering"
-        url: /software/engineering/capability-engineering/
+        url: /software/engineering/capability-engineering
       - title: "Skill Development"
-        url: /software/engineering/skill-development/
+        url: /software/engineering/skill-development
   - title: Manufacturing Control Solutions
     url: software/manufacturing-control
     children:
       - title: "Module Registration"
-        url: /software/module-registration/
+        url: /software/manufacturing-control/module-registration
       - title: "Capability Planning"
-        url: /software/capability-planning/
+        url: /software/manufacturing-control/capability-planning
       - title: "Skill Execution"
-        url: /software/skill-execution/
+        url: /software/manufacturing-control/skill-execution
       - title: "Process Orchestration"
-        url: /software/process-orchestration/
+        url: /software/manufacturing-control/process-orchestration
