@@ -1,1 +1,39 @@
-{% include_relative _pages/home.html %}
+---
+layout: splash
+permalink: /
+hidden: false
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+  actions:
+    - label: "<i class='fas fa-download'></i> Install now"
+      url: "/docs/quick-start-guide/"
+excerpt: Capability- and Skill-based Automation
+feature_row:
+  - image_path: /assets/images/home_information-model.png
+    alt: "Information Models"
+    title: "Information Models"
+    image_size: "200px"
+    excerpt: "Based on formal information models for a solid foundation"
+    url: "/_pages/information-models/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/home_engineering-solutions.png
+    alt: "Engineering Solutions"
+    title: "Engineering Solutions"
+    image_size: "200px"
+    excerpt: "Solutions for Machine Engineering"
+    url: "/_pages/engineering-solutions/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/home_manufacturing-control.png
+    alt: "Manufacturing Control"
+    image_size: "200px"
+    title: "Manufacturing Control"
+    excerpt: "Integrate and automatically execute functions"
+    url: "/docs/manufacturing-control/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"      
+---
+
+{% include feature_row %}
