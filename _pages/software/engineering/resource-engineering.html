@@ -1,0 +1,22 @@
+---
+layout: "single"
+title: "Resource Engineering"
+excerpt: ""
+sitemap: true
+permalink: /software/engineering/resource-engineering
+sidebar: 
+  nav: "software"
+---
+
+<p>
+	An ontological model of a resource with its modules and components is the foundations of our approach. Having the resource structure modeled according to our ontolog allows for capabilities and skills to be linked to the structural elements that provide said capabilities and skills. In addition, resource properties may be relevant for capability matching or other subsequent steps of analysis.
+</p>
+<p>
+	The following image is an examplified snippet showing a resource structure represented using our ontology, more specifically the ontology design pattern of VDI 2206. It contains a resource <i>:AssemblyModule1</i>, which consists of a module <i>:AssemblyCell</i>. This module is in turn made up of components.
+	<img class="w-3/4" src="../../../assets/images/engineering/resource-example.png" alt="Simplified example of a resource consisting of a module and sub components">
+	Information of a resource's structure is typically defined during mechanical engineering using 3D CAD models and bill of materials. We make use of existing CAD models and automatically convert them to the resource aspect of our capability and skill ontology.
+	Using a <a class="text-link" href="http://github.com/aljoshakoecher/">STEP-to-JSON mapper</a>, we fist create a JSON tree from STEP models. This JSON tree is then converted to our capability and skill ontology.
+</p>
+<p>
+	For users, this is all done with a simple button click. The resoure mapping functionality is integrated into <a class="text-link" href="./../manufacturing-control">CaSkade MES</a>, our capability-based manufacturing execution system.
+</p>

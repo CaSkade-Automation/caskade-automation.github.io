@@ -7,3 +7,50 @@ permalink: /software/engineering/skill-development
 sidebar: 
   nav: "software"
 ---
+
+<p>
+	In the context of capability and skill enginering, we consider skill development to be the hardest part. The implementation has adhere to a standardized state machine (in our case PackML), there has to be a skill interface that can be used by an MES and / or other modules and there also has to be an ontological description for the skill and its state machine.
+	Because it' so complicated, CaSkade contains engineering support solutions for multiple target platforms. These solutions are presented in more detail below:
+	<ul>
+		<li><a class="text-link" href="#skillUp">SkillUp</a> - A Java skill development framework</li>
+		<li><a class="text-link" href="#pySkillUp">pySkillUp</a> - A Python skill development framework</li>
+		<li><a class="text-link" href="#plc2Skill">PLC2Skill</a> - Skill development for PLCs according to IEC 61131</li>
+		<li><a class="text-link" href="#mtp2Skill">MTP2Skill</a> - A translation from MTPs to skills</li>
+	</ul>
+</p>
+
+<section id="skillUp" class="mt-6">
+	<h2>SkillUp - Skill Development using Java</h2>
+	<p>
+		<img src="/assets/images/logos/SkillUp-Logo.png" alt="Logo of SkillUp - the Java skill development SDK" class="float-left w-1/4">
+		SkillUp is an all-in-one solution to develop and deploy skills using Java. Built on top of OSGi, SkillUp is our modular and robust solution to develop arbitrary skills for any target platform with a Java runtime environment.
+		With SkillUp, you can develop a basic resource container and are then able to develop individuals skills in separate bundles. With our provided SkillUp runtime, you can start / stop / add / update / delete skills independent of each other. Read more details at <a class="text-link" target="_blank" rel="noopener noreferrer" href="http://github.com/caskade-automation/skillup">SkillUp's GitHub repository</a>.
+		<!-- TODO: Add more details here -->
+	</p>
+</section>
+
+<section id="pySkillUp" class="mt-6">
+	<h2>pySkillUp - Skill Development using Python</h2>
+	<p>
+		<img src="/assets/images/logos/pySkillUp-Logo.png" alt="Logo of pySkillUp - the Python skill development SDK" class="float-right w-1/4">
+		Just like SkillUp is a skill SDK for Java, pySkillUp is a fully fledged skill SDK for the Python programming language. It can be used to implement arbitrary functionalities as skills and provide a skill interface and ontological description without any additional efforts. The full documentation of pySkillUp is available on <a class="text-link" target="_blank" rel="noopener noreferrer" href="http://github.com/caskade-automation/pyskillup">GitHub</a>.
+		<!-- TODO: Fix link and make repo public -->
+	</p>
+</section>
+
+<section id="plc2Skill" class="mt-6">
+	<h2>PLC2Skill - Skill Development for PLCs</h2>
+	<p>
+		<img src="/assets/images/logos/PLC2Skill-Logo.png" alt="Logo of PLC2Skill - a mapping approach to transform plc code to skills" class="float-left w-1/4">
+		Compared to the previous two SDKs, PLC2Skill takes a slightly different approach. It's not an all-in-one solution, but instead is built on conventional PLC programming according to IEC 61131. Skills can be developed using a PLC library and are afterwards executed like any other PLC program. PLC2Skill takes a PLCopen XML export of the developed program and generates the ontological skill model automatically. A skill interface using OPC UA is also generated without having to do any manual tasks. You can find more infos on the <a class="text-link" target="_blank" rel="noopener noreferrer" href="http://github.com/caskade-automation/plc2skill">GitHub repository of PLC2Skill</a>.
+	</p>
+</section>
+
+<section id="mtp2Skill" class="mt-6">
+	<h2>MTP2Skill - Transform MTPs to Semantic Skills</h2>
+	<p>
+		<img src="/assets/images/logos/Mtp2Skill-Logo.png" alt="Logo of SkillUp - the Java skill development SDK" class="float-right w-1/4">
+		The Module Type Package (MTP) is very similar to the concept of skills, but with a way longer history and a more rigorous standardization. Tailored to process manufacturing, MTPs are an AutomationML-based interface description of the services (i.e., skills in CaSkade) that a process manufacturing module provides.
+		MTP2Skll is a solution to combine MTP-based modules with semantically modeled capabilities and skills. To achieve this, MTP2Skill automaticallly transforms an MTP into CaSkade's ontologies. Read more and see the detailed instruction on <a class="text-link" target="_blank" rel="noopener noreferrer" href="http://github.com/caskade-automation/mtp2skill">GitHub</a>
+	</p>
+</section>
