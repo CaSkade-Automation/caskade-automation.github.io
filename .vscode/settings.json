@@ -2,6 +2,7 @@
 	"conventionalCommits.scopes": [
 		"assets",
 		"content",
-		"style"
+		"style",
+		"publication"
 	]
 }
