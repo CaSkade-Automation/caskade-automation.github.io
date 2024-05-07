@@ -71,6 +71,8 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-size: $h-size-1;
+  padding-bottom: 0.2em;
 
   a {
     color: $text-color;
@@ -88,8 +90,14 @@ body {
 }
 
 .page__content {
+  h1 {
+	font-size: $h-size-1;
+	padding-bottom: 0.5em;
+  }
+
   h2 {
-    padding-bottom: 0.5em;
+	font-size: $h-size-2;
+    padding-bottom: 0.4em;
     border-bottom: 1px solid $border-color;
   }
 
@@ -220,11 +228,12 @@ body {
     }
 
     .page__lead {
+	  margin-bottom: 1em;
       max-width: $medium;
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-1;
 
       @include breakpoint($small) {
         font-size: $type-size-1;

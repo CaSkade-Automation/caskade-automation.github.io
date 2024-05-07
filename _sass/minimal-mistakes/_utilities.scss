@@ -135,9 +135,12 @@ body:hover .visually-hidden button {
 }
 
 .wrapper {
-  margin-left: auto;
+  margin-left: 15%;
   margin-right: auto;
-  width: 100%;
+  width: 40%;
+  background-color: rgba(20, 62, 100, 0.75);
+  border-radius: 60px 10px 60px 10px;
+  padding: 20px 40px !important;
 }
 
 /*
