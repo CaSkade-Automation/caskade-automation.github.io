@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Define default list look */
+ul {
+	@apply list-square pl-5;
+}
+
+/* Define default text link */
+.text-link {
+	@apply underline text-sky-900 hover:text-sky-600 visited:text-slate-950
+ }
