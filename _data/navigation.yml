@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Docs"
+    url: /docs
   - title: "Information Models"
     url: information-models
   - title: "Software"
@@ -8,6 +10,13 @@ main:
     url: about
   - title: "Publications"
     url: publications
+
+# docs sidebar
+docs:
+  - title: "Overview"
+    url: /docs
+  - title: "Quick Start"
+    url: /docs/quick-start-guide
 
 # information models sidebar
 information-models:
@@ -27,15 +36,15 @@ information-models:
       - title: "CaSkBot Ontology"
         url: /information-models/ontologies/caskbot
 
-
+# software sidebar
 software:
   - title: Overview
     url: /software
   - title: Engineering Solutions
     url: software/engineering
     children:
-      - title: "Machine Structure"
-        url: /software/engineering/machine-structure
+      - title: "Resource Engineering"
+        url: /software/engineering/resource-engineering
       - title: "Capability Engineering"
         url: /software/engineering/capability-engineering
       - title: "Skill Development"
@@ -43,11 +52,11 @@ software:
   - title: Manufacturing Control Solutions
     url: software/manufacturing-control
     children:
-      - title: "Module Registration"
-        url: /software/manufacturing-control/module-registration
+      - title: "Resource / Capability / Skill Registration"
+        url: /software/manufacturing-control/registration
       - title: "Capability Planning"
-        url: /software/manufacturing-control/capability-planning
+        url: /software/manufacturing-control/planning
       - title: "Skill Execution"
         url: /software/manufacturing-control/skill-execution
       - title: "Process Orchestration"
-        url: /software/manufacturing-control/process-orchestration
+        url: /software/manufacturing-control/orchestration
